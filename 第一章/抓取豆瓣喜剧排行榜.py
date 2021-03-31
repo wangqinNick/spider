@@ -21,4 +21,5 @@ list_data = resp.json()
 
 fp = open('douban.json', 'w', encoding='utf-8')
 json.dump(list_data,fp=fp,ensure_ascii=False)
+resp.close()
 print('over!!!')
